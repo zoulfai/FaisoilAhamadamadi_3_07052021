@@ -1,0 +1,288 @@
+/*le debut*/
+
+/*Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+
+
+Couleurs
+Primaire violet #9356DC 
+secondaire rose #FF79DA 
+tertiaire vert  #99E2D0
+rose claire     #F5EDFF
+
+gris1 #EAEAEA
+gris2 #F6F6F6
+noir footer #353535
+
+
+/*LES BASES*/
+
+body {
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+	margin: 0;
+}
+
+
+ul {
+	list-style: none;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.fas {
+	font-size: 20px;
+	color: #000000;
+}
+.fas:hover {
+	cursor: pointer;
+}
+
+/*header SECTION */
+
+
+.header_wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+
+}
+
+/*presentation SECTION */
+.presentation_zone_haut{
+    background-color: #EAEAEA;
+}
+
+.presentation_zone_haut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%) inset;
+}
+
+.fa-map-marker-alt{
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+
+.zone_de_presentation{
+    background-color: #F6F6F6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation{
+    cursor: pointer;
+    height: 56px;
+    width: 250px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-style: none;
+    border-radius: 100px;
+    margin-bottom: 48px;
+}
+.presentation_titre{
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.presentation_texte{
+    margin-top: 0px;
+    font-size: 18px;
+    
+}
+
+
+/*fonctionnement SECTION */
+
+
+.fonctionnement_titre{
+    padding-left: 30px;
+    margin-top: 48px;
+    margin-bottom: 25px;
+}
+.section_choix{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.petit_container{
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    margin-bottom: 56px;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
+}
+.container_rose{
+    background-color: #9356dc1c;
+}
+.choix_nom{
+    font-weight:bold ;
+}
+.chiffre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9356DC;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    right: 13px;
+}
+
+.icone_fonctionnement{
+    padding-right: 16px;
+    color: gray;
+
+}
+.icone_rose{
+    color: #9356DC;
+}
+
+/*restaurants SECTION */
+
+.restaurants_section {
+    margin-top: 32px;
+    padding-bottom: 48px;
+    background-color: #F6F6F6;
+    
+}
+.restaurants_wrapper {
+    padding-top: 32px;
+}
+.restaurants_titre {
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+.restaurants_boite_bloc{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    grid-row-gap: 25px;
+}
+.restaurants_boite {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.2);
+    height: 250px;
+    width: 325px;
+    background-color: #F6F6F6;
+}
+
+.restaurants_nouveau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    color: #04916e;
+    font-size: 15px;
+    font-weight: bold;
+    margin:0px;
+    width: 85px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    left: 225px; bottom: 170px;
+    border-radius: 3px;
+
+}
+
+.petit_text{
+    display: flex;
+    padding-left: 16px;
+    position: relative;
+    bottom: 10px;
+    flex-direction: column;
+}
+.coeur_vide{
+    position: relative;
+    right: -265px; bottom: 35px;
+    font-size: 25px;
+}
+
+.coeur_plein{
+    position: relative;
+    right: -270px; bottom: 55px;
+    font-size: 16px;
+    color: #F6F6F6;
+}
+
+.coeur_plein:hover{
+    position: relative;
+    right: -264px; bottom: 62px;
+    font-size: 28px;
+    color: linear-gradient(#FF79DA, #9356DC);
+    
+}
+
+
+.restaurants_petit_titre{
+margin: 0px;
+}
+.restaurants_mini_titre{
+margin: 0px;
+padding-top: 3px;
+}
+
+.restaurants_boite:hover {
+    transform: scale(1.02);
+}
+
+
+.restaurants_photo_img {
+    width: 100%;   
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+/*footer SECTION */
+.footer_section{
+    background-color: #353535;
+    color: white;
+}
+.footer_titre{
+    display: inline-block;
+    padding-left: 30px ;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-family: "Shrikhand";
+    font-size: 20px;
+}
+
+.footer_list{
+    padding-left:30px
+}
+.footer_lien{
+    color: white;
+}
+
+.icone_footer{
+    padding-right:4px ;
+    font-size: 16px;
+    color: white;
+}
+.footer_wrapper {
+    display: flex;
+   
+}
+
