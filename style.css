@@ -91,6 +91,12 @@ a {
     border-radius: 100px;
     margin-bottom: 48px;
 }
+
+.presentation:hover{
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 70%);
+    background: linear-gradient(#ff79d9bd, #9256dcd5);
+}
+
 .presentation_titre{
     margin-left: 48px;
     margin-right: 48px;
@@ -225,6 +231,7 @@ a {
     color:  #f6f6f6;
     width: fit-content;
     z-index: 2;
+    transition-duration: .3s;
 }
 
 .coeur_plein:hover{
@@ -238,8 +245,6 @@ a {
     -webkit-text-fill-color: transparent;
     
 }
-
-
 
 
 .restaurants_petit_titre{
