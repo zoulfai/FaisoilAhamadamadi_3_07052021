@@ -160,15 +160,19 @@ a {
 }
 
 .texte_mini_titre{
+    display: flex;
     margin: 0px;
     margin-left: 10px;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
+    width: inherit;
+    justify-content: space-between;   
 }
 
 .prix{
     font-weight: bold;
     position: relative;
-    left: 130px;
+    right: 25px;
+   
 }
 
 
@@ -184,9 +188,7 @@ a {
     transform: rotate(-360deg);
 }
 
-.prix:hover{
-    right:50px
-}
+
 
 .cercle{
     color: white;
@@ -195,50 +197,51 @@ a {
 
 .bloc1 {
     
-    animation: fadein 1s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 1s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: monte 1s;
+   
 }
-@keyframes fadein {
-    from {
+@keyframes monte {
+    0% {
         opacity:0;
+        transform: translateY(1rem);
     }
-    to {
+    100% {
         opacity:1;
-    }
-}
-.bloc2 {
-    
-    animation: fadein 3s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-.bloc3 {
-    
-    animation: fadein 5s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
+        transform: translateY(0);
     }
 }
 
+.bloc2 {
+    
+    animation: monte 2s;
+   
+}
+@keyframes monte {
+    0% {
+        opacity:0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.bloc3 {
+    
+    animation: monte 3s;
+   
+}
+@keyframes monte {
+    0% {
+        opacity:0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
 
 
 .commander{
