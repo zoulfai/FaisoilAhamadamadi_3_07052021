@@ -18,6 +18,21 @@ noir footer #353535
 
 /*LES BASES*/
 
+
+@media(min-width:768px){
+    
+
+    .footer_section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_list{
+        padding-left: 0px;
+    }
+}
+
+
 body {
 	font-family: 'Roboto',sans-serif;
 	font-weight: 400;
@@ -153,6 +168,16 @@ a {
     margin-top: 48px;
     margin-bottom: 25px;
 }
+
+@media (min-width:768px) {
+    .fonctionnement_titre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+}
 .section_choix{
    display: flex;
    flex-direction: column;
@@ -217,6 +242,16 @@ a {
 .restaurants_titre {
     margin-bottom: 25px;
     padding-left: 30px;
+}
+
+@media (min-width:768px) {
+    .restaurants_titre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
 }
 .restaurants_boite_bloc{
     display: flex;
