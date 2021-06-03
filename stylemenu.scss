@@ -192,10 +192,13 @@ body {
   }
   
   .anime_cercle {
-    display: flex;
+    display: none;
     width: auto;
     height: auto;
     background: #99e2d0;
+  }
+  .anime_cercle:hover{
+    display: flex;
   }
   
   .cercle {

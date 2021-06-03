@@ -104,29 +104,38 @@ a {
 .coeur_vide{
     font-size: 25px;
     position: relative;
-    left: 140px;
+    left: 115px; 
+    transition-duration: .5s;
+    width: fit-content;
+    background: #f6f6f6;
+    transition-duration: 0.5s;
+    
+}
+.coeur_vide:hover{
+    opacity: 0;
 }
 
 .coeur_plein{
     position: relative;
-    left: -27px; bottom: 2px;
-    font-size: 16px;
-    color:  #f6f6f6;
+    left: 140px;  
+    opacity: 1;
+    font-size: 25px;
     width: fit-content;
-    z-index: 2;
-    transition-duration: .3s;
-}
-
-.coeur_plein:hover{
-    position: relative;
-    left: -33px; top: 1px;
-    font-size: 28px;
-    z-index: 1;
+    transition-duration: 0.5s;
     background: -webkit-linear-gradient( #9356DC,#FF79DA);
     background-clip: text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     
+}
+
+.coeur_plein:hover{
+    opacity: 1;
+    font-size: 25px;
+    background: -webkit-linear-gradient( #9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .menu_petit_titre{
@@ -143,22 +152,54 @@ a {
 }
 
 .menu_petit_bloc{
-    padding: 13px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #Ffff;
+    height: 65px;
     width: 330px;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
     justify-content: space-between;
+    overflow: hidden;
 }
+
+
+.anime_cercle {
+    display: flex;
+    position: relative;
+    left: 8px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 10px;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;;
+    background: #99e2d0;
+    transition: width 0.5s, height 0.1s;
+}
+
 .menu_petit_bloc:hover{
     cursor: pointer;
 }
 
+.menu_petit_bloc:hover .anime_cercle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100%;
+    
+
+}
+.menu_petit_bloc:hover .cercle {
+    animation: rotate_cercle 1s;
+    
+}
+
 .petit_bloc_texte{
+    margin: 13px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -186,20 +227,44 @@ a {
     align-items: flex-end;
     font-weight: bold;
     height: 40px;
+    margin: 13px 5px 13px 13px;
 }
 
 
-
-.anime_cercle{
-    display: flex;
-    width: auto;
-    height:auto;
-    background: #99e2d0;
-}
 
 .cercle{
    color:white;
+   position: relative;
+   right: 4px;
 }
+
+@keyframes affiche_cercle{
+    0%{
+        width: 0px;
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        width: 110px;
+    }
+}
+
+@keyframes rotate_cercle {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+
+
+
+
+
+
 
 .bloc1 {
     
