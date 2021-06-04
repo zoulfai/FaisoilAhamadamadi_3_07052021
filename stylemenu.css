@@ -108,19 +108,19 @@ a {
 .menu_titre{
     font-family: "Shrikhand",sans-serif;
     font-size: 25px;
+    
 }
 .menu_tete{
     display: flex;
     align-items: center;
-    position: relative;
-    right: 60px;
+    flex-direction: row;
+    width: 330px;
 }
 
 .coeur_vide{
-    font-size: 25px;
     position: relative;
-    left: 115px; 
-    transition-duration: .5s;
+    right: -50px;
+    font-size: 25px;
     width: fit-content;
     background: #f6f6f6;
     transition-duration: 0.5s;
@@ -132,7 +132,7 @@ a {
 
 .coeur_plein{
     position: relative;
-    left: 140px;  
+    right: -75px;
     opacity: 1;
     font-size: 25px;
     width: fit-content;
