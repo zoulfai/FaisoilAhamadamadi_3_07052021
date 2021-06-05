@@ -299,7 +299,7 @@ a {
     position: relative;
     right: -265px; bottom: 59.5px;
     font-size: 25px;
-    width: fit-content;
+    width: 30px;
     background: #f6f6f6;
     transition-duration: 0.5s;
 }
