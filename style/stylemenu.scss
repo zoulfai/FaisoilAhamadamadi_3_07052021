@@ -5,25 +5,37 @@ Logo et titres: Shrikhand
 Texte: Roboto
 
 
-Couleurs
-Primaire violet #9356DC 
-secondaire rose #FF79DA 
-tertiaire vert  #99E2D0
-rose claire     #F5EDFF
+Couleurs */
 
-gris1 #EAEAEA
-gris2 #F6F6F6
-noir footer #353535
+$primaire_violet: #9356DC; 
+$secondaire_rose: #FF79DA ;
+$tertiaire_vert:  #99E2D0;
+$rose_claire:    #F5EDFF;
+
+$gris1: #EAEAEA;
+$gris2: #F6F6F6;
+$noir_footer: #353535;
 
 /*loading spinner*/
 
 /*LES BASES*/
 
-body {
-    font-family: 'Roboto',sans-serif;
+@media (min-width: 768px) {
+    .footer_section {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer_list {
+      padding-left: 0px;
+    }
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000000;
+    color: black;
     margin: 0;
   }
   
@@ -32,18 +44,22 @@ body {
   }
   
   a {
-    color: #000000;
+    color: black;
     text-decoration: none;
     cursor: pointer;
   }
   
   .fas {
     font-size: 20px;
-    color: #000000;
+    color: black;
   
     &:hover {
       cursor: pointer;
     }
+  }
+  
+  .far:hover {
+    cursor: pointer;
   }
   
   /*header SECTION */
@@ -73,7 +89,7 @@ body {
   
   .menu_section {
     z-index: 3;
-    background-color: #f6f6f6;
+    background-color: $gris2;
   }
   
   .menu_wrapper {
@@ -81,7 +97,7 @@ body {
     position: relative;
     bottom: 50px;
     z-index: 1;
-    background-color: #f6f6f6;
+    background-color: $gris2;
     border-radius: 25px;
     align-items: center;
     flex-direction: column;
@@ -93,43 +109,37 @@ body {
   }
   
   .menu_titre {
-    font-family: "Shrikhand",sans-serif;
+    font-family: "Shrikhand", sans-serif;
     font-size: 25px;
   }
   
   .menu_tete {
     display: flex;
     align-items: center;
-    position: relative;
-    right: 60px;
+    flex-direction: row;
+    width: 330px;
   }
   
-  .coeur_vide {
-    font-size: 25px;
-    position: relative;
-    left: 140px;
-  }
+
   
-  .coeur_plein {
+  #coeur_plein {
     position: relative;
-    left: -27px;
-    bottom: 2px;
-    font-size: 16px;
-    color: #f6f6f6;
-    width: fit-content;
-    z-index: 2;
-    transition-duration: .3s;
+    right: -75px;
+    opacity: 1;
+    height: 20px;
+    width: 25px;
+    transition-duration: 0.5s;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 50px;
   
     &:hover {
-      position: relative;
-      left: -33px;
-      top: 1px;
-      font-size: 28px;
-      z-index: 1;
-      background: -webkit-linear-gradient(#9356DC, #FF79DA);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      opacity: 1;
+      height: 21px;
+      width: 25px;
+      fill: url(#myGradient);
+      stroke-width: 0px;
+      cursor: pointer;
     }
   }
   
@@ -142,27 +152,55 @@ body {
   .ligne {
     border-top: solid;
     border-color: #99E2D0;
-    color: #f6f6f6;
+    color: $gris2;
   }
   
   .menu_petit_bloc {
-    padding: 13px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #Ffff;
+    height: 65px;
     width: 330px;
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
     justify-content: space-between;
+    overflow: hidden;
+  }
   
-    &:hover {
-      cursor: pointer;
+  .anime_cercle {
+    display: flex;
+    position: relative;
+    left: 8px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 10px;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    background: #99e2d0;
+    transition: width 0.5s, height 0.1s;
+  }
+  
+  .menu_petit_bloc:hover {
+    cursor: pointer;
+  
+    .anime_cercle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 100%;
+    }
+  
+    .cercle {
+      animation: rotate_cercle 1s;
     }
   }
   
   .petit_bloc_texte {
+    margin: 13px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -182,6 +220,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 13.5px;
   }
   
   .prix {
@@ -189,20 +228,23 @@ body {
     align-items: flex-end;
     font-weight: bold;
     height: 40px;
-  }
-  
-  .anime_cercle {
-    display: none;
-    width: auto;
-    height: auto;
-    background: #99e2d0;
-  }
-  .anime_cercle:hover{
-    display: flex;
+    margin: 13px 5px 13px 13px;
   }
   
   .cercle {
     color: white;
+    position: relative;
+    right: 4px;
+  }
+  
+  @keyframes rotate_cercle {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
   .bloc1 {
@@ -263,10 +305,10 @@ body {
     cursor: pointer;
     height: 56px;
     width: 200px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($secondaire_rose, $primaire_violet);
     border-style: none;
     border-radius: 100px;
     margin-bottom: 30px;
@@ -282,7 +324,7 @@ body {
   /*footer SECTION */
   
   .footer_section {
-    background-color: #353535;
+    background-color: $noir_footer;
     color: white;
   }
   
