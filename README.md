@@ -1,25 +1,36 @@
-Scénario
+# Projet : Développement Web pour Ohmyfood!
 
-Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
+## Description
+Ohmyfood! est une startup ambitieuse qui souhaite s'imposer sur le marché de la restauration en ligne. Ce projet consiste à développer un site 100% mobile permettant aux utilisateurs de consulter les menus de restaurants gastronomiques et de personnaliser leur repas à l'avance, afin de réduire leur temps d'attente une fois sur place. 
 
-Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+## Équipe projet
+- **Paul** : CTO, responsable du développement technique du site.
+- **Fanny** : UX designer, en charge de l’interface et de l’esthétique du site.
+- **Anissa** : Commerciale, chargée de démarcher les restaurants partenaires.
+- **Moi** : Développeur, en charge de l'intégration des menus et des fonctionnalités.
 
-Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce beau projet.
+## Fonctionnalités Principales
+- **Consultation des menus** : Affichage des menus gastronomiques des restaurants partenaires.
+- **Personnalisation du repas** : Sélection de plats à l’avance pour qu’ils soient prêts à l’arrivée.
+- **Réservation en ligne** : Système de réservation intégré pour réserver une table directement depuis le site.
+- **Interface mobile-first** : Design optimisé pour une utilisation fluide sur smartphone.
 
-L’équipe se compose de :
+## Contraintes Techniques
+- **Responsive Design** : Le site doit être entièrement adapté aux mobiles, sans perte d'information ou de qualité visuelle.
+- **Gestion des images** : Optimisation des images pour un chargement rapide tout en gardant une bonne qualité.
+- **Icônes** : Utilisation de Font Awesome pour les éléments interactifs.
+- **Palette de couleurs** : Thème élégant aux couleurs de Paris, en accord avec les maquettes fournies par Fanny.
+- **Police de caractères** : Utilisation de Montserrat pour une lisibilité optimale.
+- **Validation W3C** : Le code HTML et CSS doit être conforme aux normes W3C.
 
-Paul, le CTO du futur site ;
-Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
-Anissa, commerciale chargée de démarcher les restaurants ;
-et vous, chargé du développement du site.
-Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
+## Recommandations de Développement
+- **Éditeur recommandé** : Visual Studio Code avec les extensions Live Server et Prettier pour une meilleure expérience de développement.
+- **Organisation des fichiers** : Structure claire avec séparation entre HTML, CSS et JavaScript.
+- **Flexbox et CSS Grid** : Utilisation de ces technologies pour gérer la disposition des éléments sur la page.
+- **Versionnage** : Suivi des modifications via Git avec un dépôt GitHub pour le travail collaboratif et le déploiement.
 
-Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
-
-Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le brief que vous établissez avec le CTO, Paul.
-
-De retour à votre bureau, vous trouvez un post-it de Fanny.
-
-Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
-
-Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
+## Ressources supplémentaires
+- [Font Awesome](https://fontawesome.com)
+- [Montserrat sur Google Fonts](https://fonts.google.com/specimen/Montserrat)
+- [Validator W3C HTML](https://validator.w3.org)
+- [Validator W3C CSS](https://jigsaw.w3.org/css-validator)
